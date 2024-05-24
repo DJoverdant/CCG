@@ -1,0 +1,27 @@
+<head>
+
+    <title> CCG.com/login </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css"> 
+    <script src="index.js"></script> 
+
+</head>
+
+<body>
+
+    <div> 
+
+        <h1> OLÁ! </h1>
+        Usúario: 
+        <input type="text" placeholder="Digite seu user" id="user"> 
+        <br>
+        Vamos adotar? 
+        <input type="text" placeholder="Adote" id="question"> 
+        <br> <br>
+        <button onclick="validate()"> Entrar </button>
+
+    </div>
+
+    <img id="logo" onclick="home()" src="https://crazycatgang.com.br/wp-content/uploads/2020/02/ALTA-Capa-Facebook2.png">
+
+</body>
