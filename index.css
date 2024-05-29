@@ -8,15 +8,15 @@ div{
 }
 
 section{
-    background-image: url(https://img.freepik.com/fotos-gratis/vista-de-um-gatinho-adoravel-com-fundo-simples_23-2150758080.jpg);
+    background-image: url(https://scontent.fbfh10-1.fna.fbcdn.net/v/t39.30808-6/302187472_2321180198058936_6107568492535591486_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=xf9Lx24dSpwQ7kNvgHPhHH7&_nc_ht=scontent.fbfh10-1.fna&oh=00_AYC1rNEq7zRO84klbu4e63udy0ZxwwSVQb_fCY3_AwypSw&oe=665A838F);
     display: flex;
     justify-content: center;
-    align-content: center;
 }
 .about{
-    width: 350px;
+    width: 30%;
+    height: 800px;
     text-align: justify;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 input{ 
@@ -26,11 +26,10 @@ input{
 }
 
 a{
-    background-color: yellow;
     color: black;
 }
 a:hover{
-    color: white;
+    color: rgb(214, 214, 62);
 }
 
 button{
