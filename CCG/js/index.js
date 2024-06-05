@@ -1,14 +1,10 @@
 function validate(){ 
 
-    var user = document.getElementById("user").value; 
-    var question = document.getElementById("question").value; 
+    var user = document.getElementById("text-input").value; 
+    var password = document.getElementById("password").value; 
 
-    if (user == "User" && question == "Adoção") { 
-        window.location.href = "adocao.html"; 
-    } 
- 
-    else if (user == "User" && question == "Doação") { 
-        window.location.href = "doacao.html"; 
+    if (user == "admin" && password == "admin") { 
+        window.location.href = "doacoes.html"; 
     } 
 
     else { 
