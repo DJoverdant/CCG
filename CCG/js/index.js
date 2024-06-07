@@ -15,3 +15,8 @@ function validate(){
 function home(){
     window.location.href = "index.html"
 }
+
+function save(){
+    alert("Seus dados foram enviados \n Entraremos em contato em breve!!!")
+    window.location.href = "index.html"
+}
