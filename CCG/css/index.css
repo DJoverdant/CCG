@@ -57,7 +57,7 @@ input{
 }
 
 .home{
-    background-image: url(https://scontent.fbfh10-1.fna.fbcdn.net/v/t39.30808-6/302187472_2321180198058936_6107568492535591486_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=xf9Lx24dSpwQ7kNvgHPhHH7&_nc_ht=scontent.fbfh10-1.fna&oh=00_AYC1rNEq7zRO84klbu4e63udy0ZxwwSVQb_fCY3_AwypSw&oe=665A838F);
+    background-image: url("pix.png");
     display: flex;
     justify-content: center;
 }
@@ -118,6 +118,19 @@ button:hover{
     color: black;
     text-align: left;
     margin: 10px;
+}
+
+#BotaoAdt{
+    color: yellow;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
+#BotaoAdt:hover{
+    color: yellow;
+    padding: 11px;
 }
 
 
