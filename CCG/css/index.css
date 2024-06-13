@@ -35,7 +35,7 @@ input{
 }
 #blocks{
     display: inline;
-    background-color: yellow;
+    background-color: #ffda05e7;
     border-radius: 10px;
     padding: 4px;
 }
@@ -109,7 +109,6 @@ input{
     font-weight: 600;
 }
 
-
 #text-input{
     width:75%;
 }
@@ -157,7 +156,6 @@ button:hover{
     text-decoration: none;
 }
 #BotaoAdt:hover{
-    color: yellow;
     padding: 11px;
 }
 
