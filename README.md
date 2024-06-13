@@ -4,6 +4,7 @@
   - Sobre a CCG. ✔
   - Pix da CCG para doações. ✔
   - Utilizar logos e imagens da CCG. ✔
-- Criar páginas novas (html) dentro da pasta html.
-- Caso haja a necessidade de um novo css ou js criar fora mesmo.
-- Coloração das páginas: Preto( #000000 ) e amarelo( #E6C972 / #fcc603 / #ffdd00 ).
+  - Coloração das páginas: Preto( #000000 ) e amarelo( #ffda05e7 / yellow msm ). ✔
+
+- Próxima etapa: Banco de dados <br>
+![gif](https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif)
