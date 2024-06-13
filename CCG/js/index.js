@@ -17,6 +17,6 @@ function home(){
 }
 
 function save(){
-    alert("Seus dados foram enviados \n Entraremos em contato em breve!!!")
+    alert("Seus dados foram enviados\nEntraremos em contato em breve!!!")
     window.location.href = "index.html"
 }
