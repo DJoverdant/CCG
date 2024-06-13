@@ -1,9 +1,9 @@
 - Estruturar página com:
-  - Login, barra de pesquisa, blog, etc.
-  - 2 botões principais: Adoção e Voluntariar-se.
-  - Sobre a CCG.
-  - Pix da CCG para doações.
-  - Utilizar logos e imagens da CCG.
+  - Login, barra de pesquisa, blog, etc. ✔
+  - 2 botões principais: Adoção e Voluntariar-se. ✔
+  - Sobre a CCG. ✔
+  - Pix da CCG para doações. ✔
+  - Utilizar logos e imagens da CCG. ✔
 - Criar páginas novas (html) dentro da pasta html.
 - Caso haja a necessidade de um novo css ou js criar fora mesmo.
 - Coloração das páginas: Preto( #000000 ) e amarelo( #E6C972 / #fcc603 / #ffdd00 ).
