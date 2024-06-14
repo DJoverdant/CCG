@@ -50,19 +50,31 @@ input{
 #link_cab:hover{
     font-size: 21px;
 }
-
 #search{
     font-weight: 600;
     border-bottom: 0;
 }
 
+.background{
+    display: flex;
+    justify-content: center;
+    background-image: url("images/blackcat.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#focus{
+    background-color: #000000d3;
+    padding: 20px;
+    border-radius: 20px;
+}
 #logo{
     width: 200px;
     opacity: 100%;
     border-radius: 50%;
     border: 4px solid;
 }
-
 #bt{
     font-size: 20px;
     color: white;
@@ -74,7 +86,7 @@ input{
 }
 
 .home{
-    background-image: url("pix.png");
+    background-image: url("images/pix.png");
     display: flex;
     justify-content: center;
 }
