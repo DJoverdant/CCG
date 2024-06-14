@@ -86,9 +86,10 @@ input{
 }
 
 .home{
-    background-image: url("images/pix.png");
     display: flex;
     justify-content: center;
+    background-image: url("images/pix.png");
+    background-size: cover;
 }
 .about{
     color: black;
