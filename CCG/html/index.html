@@ -3,10 +3,10 @@
         
     <head>
 
-        <title> CCG.com </title>
+        <title> CCG </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/index.css"> 
-        <script src="js/index.js"></script> 
+        <link rel="stylesheet" href="../css/index.css"> 
+        <script src="../js/index.js"></script> 
 
     </head>
 
@@ -19,11 +19,14 @@
             </div>
             
             <div id="blocks">
-                <a id="link_cab" href="doacoes.html">DOAÇÕES</a>
+                <a id="link_cab" href="login.html">Login</a>
             </div>
 
             <div id="blocks" >
-                🔎<input id="search" type="text" placeholder="perguntas" size="10">
+                <form id="blocks" method="get" action="http://www.google.com/search">
+                    🔎<input id="search" type="text" name="q" placeholder="perguntas" size="10"/>
+                    <input type="hidden" name="sitesearch" value="crazycatgang.com.br"/>
+                </form>
             </div>
 
         </section>
@@ -32,12 +35,12 @@
 
             <div id="focus"> 
 
-                <img id="logo" src="images/logo.png">
+                <img id="logo" src="../images/logo.png">
                 <h1> Seja Bem-Vindo à CCG! </h1>
 
                 <div>
                     <a id="bt" href="adocao.html"> Adotar </a>
-                    <a id="bt" href="question.html"> Voluntariar-se</a>
+                    <a id="bt" href="voluntariar.html"> Voluntariar-se</a>
                 </div>
                 
             </div>
