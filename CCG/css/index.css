@@ -134,39 +134,42 @@ input{
 
 
 /* login.html */
-.questions{
-    display: inline-block;
-    width: 80%;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container img{
+    width: 60%;
+}
+.container img:hover{
+    width: 81%;
+    opacity: 60%; 
+}
+
+#questions{
+    width: 60%;
     border-radius: 10px;
     background-color: #ffda05e7;
     color: black;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bolder;
 }
-
-#text-input{
+#questions input{
     width:75%;
 }
-
-#password{
-    width:75%;
-}
-
-button{
+#questions button{
     background-color: black;
+    border: 0;
+    border-radius: 5px;
     color: yellow;
     margin: 15px;
+    width: 50%;
 }
-button:hover{
+#questions button:hover{
     color: white;
-}
-
-#poster{
-    width: 80%;
-}
-#poster:hover{
-    width: 81%;
-    opacity: 60%; 
 }
 
 

@@ -1,15 +1,10 @@
 function validate(){ 
 
-    var user = document.getElementById("text-input").value; 
+    var user = document.getElementById("user").value; 
     var password = document.getElementById("password").value; 
 
-    if (user == "admin" && password == "admin") { 
-        window.location.href = "doacoes.html"; 
-    } 
+    // checar no bando de dados e armazenar estes valores
 
-    else { 
-        alert("Usuário ou resposta invalido(s)") 
-    } 
 } 
 
 function home(){
@@ -17,6 +12,5 @@ function home(){
 }
 
 function save(){
-    alert("Seus dados foram enviados\nEntraremos em contato em breve!!!")
-    window.location.href = "index.html"
+    // armazenar estes dados com o method="post" e salvar no bando de dados 
 }

@@ -10,21 +10,23 @@
     </head>
 
     <body>
-
-        <div class="questions"> 
-
-            <h1> Seja bem-vindo! </h1>
-            Usúario: 
-            <input type="text" placeholder="Digite seu user" id="text-input"> 
-            <br>
-            Senha:
-            <input type="password" placeholder="Digite sua senha" id="password">
-            <br> <br>
-            <button onclick="validate()"> Entrar </button>
-
-        </div>
         
-        <img id="poster" onclick="home()" src="https://crazycatgang.com.br/wp-content/uploads/2020/02/ALTA-Capa-Facebook2.png">
+        <section class="container">
+
+            <div id="questions"> 
+                
+                <h1> Seja bem-vindo! </h1>
+                <input type="text" placeholder="Digite seu user" id="user"> 
+                <br>
+                <input type="password" placeholder="Digite sua senha" id="password">
+                <button onclick="validate()"> Entrar </button>
+                
+            </div>
+            
+            <img onclick="home()" src="https://crazycatgang.com.br/wp-content/uploads/2020/02/ALTA-Capa-Facebook2.png">
+            
+        </section>
 
     </body>
+
 </html>
