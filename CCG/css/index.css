@@ -37,12 +37,16 @@ input{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    display: flex;
     justify-items: center;
+    align-items: center;
+    flex-direction: column;
     padding: 100px;
 }
 
 #toolbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -52,7 +56,6 @@ input{
         justify-content: center;
         background-color: #ffda05e7;
         border-radius: 10px;
-
     }
     #search{
         font-weight: 600;
