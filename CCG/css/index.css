@@ -125,15 +125,15 @@ input{
 #ctt{
     color: white;
 }
-    #social_logo{
-        width: 25px;
-    }
-    .ctt{
-        font-size: 25px;
-    }
+#social_logo{
+    width: 25px;
+}
+.ctt{
+    font-size: 25px;
+}
 
 
-/* question.html */
+/* login.html */
 .questions{
     display: inline-block;
     width: 80%;
@@ -171,20 +171,29 @@ button:hover{
 
 
 /* adocao.html */
-.blocos_gatos{
-    display: inline-block;
-    width: 30%;
-    border-radius: 10px;
-    background-color: #ffda05e7;
-    color: black;
+.adote{
+    background-image: url("images/adote.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#blocos_gatos{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    border-radius: 20px;
+    width: 400px;
     text-align: left;
-    margin: 10px;
+}
+#blocos_gatos div{
+    font-size: 20px;
 }
 
 #BotaoAdt{
     color: yellow;
     background-color: black;
-    font-size: 16px;
     font-weight: bold;
     border-radius: 10px;
     padding: 10px;
@@ -195,7 +204,7 @@ button:hover{
 }
 
 
-/* doacoes.html */
+/* voluntariar.html */
 .questionario{
     color: black;
     background-color: #ffda05e7;
