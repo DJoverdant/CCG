@@ -33,13 +33,27 @@
     .cab{
         border-bottom: white solid 3px;
         font-size: 20px;
-        padding: 20px;
+
+        display: flex;
+        
     }
     #blocks{
         display: inline;
         background-color: #ffda05e7;
         border-radius: 10px;
-        padding: 4px;
+        padding: 10px;
+    }
+    #blocks img{
+        width: 20px;
+    }
+    #search_block{
+        display:;
+        width: 100%;
+        background-color: #ffda05e7;
+        border-radius: 10px;
+    }
+    #search{
+        width: 100%;        
     }
 
     #link_cab{
@@ -187,4 +201,11 @@
     #email{
         text-decoration: none;
         color: rgb(0, 0, 0);
+    }
+
+
+    @media screen and (max-width: 944px){
+        .cab{
+            flex-direction: column;
+        }
     }
