@@ -252,8 +252,31 @@ input{
         padding: 5px 15px;
         white-space: nowrap;
     }
+    #blocos_gatos{
+        background-color: rgba(0, 0, 0, 0.856);
+        color: white;
+        border-radius: 20px;
+        width: 4000px;
+        text-align: left;
+
+    }
+    p{
+        font-size: 50px;
+    }
+
+    #BotaoAdt{
+        color: yellow;
+        background-color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 2% 40%;
+        text-decoration: none;
+        align-items: center;
+    }
+    #BotaoAdt:hover{
+        padding: 2% 40%;
+    }
+
+
+
 }
-
-
-
-
