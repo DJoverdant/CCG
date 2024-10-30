@@ -294,7 +294,26 @@ input{
     #BotaoAdt:hover{
         padding: 2% 40%;
     }
-
-
+    #questions{
+        width: 75%;
+    }
+    #questions button{
+        height: 40px;
+    }
+    .container img{
+        width: 75%;
+    }
+    .container img:hover{
+        width: 75%;
+        opacity: 60%; 
+    }
+    .questionario button{
+        padding: 5px 10px;
+        width: 80%;
+        height: 40px;  
+    }
+    .questionario r{
+        font-size: 30px;
+    }
 
 }
