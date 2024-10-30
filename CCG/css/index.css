@@ -101,7 +101,7 @@ input{
         color: white;
         display: inline-block;
         border: 2px solid white;
-        margin: 30px;
+        margin: 40px;
         padding: 2px 20px;
         text-decoration: none;
     }
@@ -110,17 +110,17 @@ input{
 .home{
     display: flex;
     justify-content: center;
-    background-image: url("images/pix.png");
+    background-color: #ffda05e7;
     background-size: cover;
 }
-    .about{
-        color: black;
-        font-weight: 700;
-        width: 30%;
-        height: 700px;
-        text-align: justify;
-        font-size: 16px;
-    }
+.about{
+    display: flex;
+    color: black;
+    font-weight: 700;
+    width: 700px;
+    text-align: left;
+    font-size: 25px;
+}
 
 #ctt{
     color: white;
@@ -243,4 +243,56 @@ input{
     .cab{
         flex-direction: column;
     }
+
+    .questionario{
+        color: black;
+        background-color: #ffda05e7;
+        margin: 3px;
+        text-align: left;
+        padding: 40px;
+        font-size: 50px;    
+    }
+    .about{
+        width: 80%;
+        height: auto;
+        font-size: 20px;
+        margin: 50px;
+        padding: right 10px;
+        box-sizing: border-box;
+    }
+    .home{
+        flex-direction: column;
+    }
+    #bt{
+        margin: 20px;
+        padding: 5px 15px;
+        white-space: nowrap;
+    }
+    #blocos_gatos{
+        background-color: rgba(0, 0, 0, 0.856);
+        color: white;
+        border-radius: 20px;
+        width: 4000px;
+        text-align: left;
+
+    }
+    p{
+        font-size: 50px;
+    }
+
+    #BotaoAdt{
+        color: yellow;
+        background-color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 2% 40%;
+        text-decoration: none;
+        align-items: center;
+    }
+    #BotaoAdt:hover{
+        padding: 2% 40%;
+    }
+
+
+
 }
