@@ -110,17 +110,19 @@ input{
 .home{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #ffda05e7;
     background-size: cover;
 }
-.about{
-    display: flex;
-    color: black;
-    font-weight: 700;
-    width: 700px;
-    text-align: left;
-    font-size: 25px;
-}
+    #about{
+        display: flex;
+        color: black;
+        font-weight: 700;
+        width: 70vw;
+        min-height: 50vh;
+        text-align: left;
+        font-size: 20px;
+    }
 
 #ctt{
     color: white;
