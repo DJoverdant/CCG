@@ -3,7 +3,7 @@
     
     <head>
 
-        <title> CCG/login </title>
+        <title> CCG/signup </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/index.css"> 
@@ -17,14 +17,18 @@
 
             <div id="questions"> 
                 
-                <h1> Seja bem-vindo! </h1>
-                <input type="text" name="username" placeholder="Digite seu user"> 
-                <br>
-                <input type="password" name="senha" placeholder="Digite sua senha">
+                <h1> Crie sua conta! </h1>
 
-                <button onclick="go_to(0)" name="submit" id="submit"> Entrar </button>
-                <br>
-                <button onclick="go_to(3)"> Criar conta </button>
+                <form method="POST" action="send_signup.php">
+
+                    <input type="text" name="username" placeholder="Digite seu user"> 
+                    <br>
+                    <input type="password" name="senha" placeholder="Digite sua senha">
+                    
+                    <p id="response"></p>
+                    <button onclick="go_to(2)" name="submit" id="submit"> Criar </button>
+                
+                </form>
                 
             </div>
             

@@ -8,8 +8,10 @@
   - Coloração das páginas: Preto( #000000 ) e amarelo( #ffda05e7 / yellow msm ). ✔
 
   Parte 2:
-  - Resposividade a dispositivo mobile.
+  - Resposividade a dispositivo mobile. ✔
   - Banco de dados.
 
+ATENÇÃO!
+A pasta BD(banco de dados) serve somente para importação no xampp.
 
 ![gif](https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif)

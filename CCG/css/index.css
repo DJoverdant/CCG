@@ -30,6 +30,13 @@ input{
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* Respostas */
+#response{
+    color: black;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
 
 /* index.html */
 .background{
@@ -147,7 +154,7 @@ input{
     width: 60%;
 }
 .container img:hover{
-    width: 81%;
+    width: 61%;
     opacity: 60%; 
 }
 
@@ -173,7 +180,14 @@ input{
 #questions button:hover{
     color: white;
 }
-
+#questions a{
+    color: yellow;
+    background-color: black;
+    width: 50%;
+    border-radius: 10px;
+    padding: 0 10px;
+    text-decoration: none;
+}
 
 /* adocao.html */
 .adote{

@@ -17,7 +17,8 @@
         <section class="questionario">
 
             <p>Preencha os campos abaixo:</p>
-            <form method="post" action="send.php">
+            <form method="post" action="send_volunt.php">
+                
                 <input name="nome" type="text" id="" placeholder="Nome completo">
                 
                 <input name="sobre" type="text" id="" placeholder="Sobre mim">
@@ -43,16 +44,17 @@
                 <input name="motivo" type="text" id="" placeholder="Por que quer se voluntariar">
 
                 <input name="animais" type="text" id="" placeholder="Possui animais? Se sim, quais?">
-
-                <button name="submit" id="submit"> Salvar </button>
+                
+                <p id="response"></p>
+                <button onclick="go_to(1)" name="submit" id="submit"> Salvar </button>
+            
             </form>
-
+            
             <h2>Doações:</h2>
             <h3>As doacoes podem ser realizadas por pix: <br> <img id="social_logo" src="../images/pix.png" > <a id="email" href="#">ccgcwb@gmail.com</a> </h3>
         
         </section>
 
-        
     </body>
 
 </html>

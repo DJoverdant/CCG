@@ -7,10 +7,33 @@ function validate(){
 
 } 
 
-function home(){
-    window.location.href = "index.html"
-}
+function go_to(x){
 
-function save(){
-    // armazenar estes dados com o method="post" e salvar no bando de dados 
+    if (x==0){
+        setTimeout(function(){
+            window.location.href = "index.html";
+        }, 2000);
+
+    }
+
+    if (x==1){
+        document.getElementById("response").innerHTML = "Dados enviados com sucesso!";
+        setTimeout(function(){
+            window.location.href = "index.html";
+        }, 2000);
+
+    }
+
+    if (x==2){
+        document.getElementById("response").innerHTML = "Conta criada!";
+        setTimeout(function(){
+            window.location.href = "login.html";
+        }, 2000);
+
+    }
+
+    if (x==3){
+        window.location.href = "signup.html";
+    }
+
 }

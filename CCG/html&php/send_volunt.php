@@ -1,16 +1,7 @@
 <?php
     
-    $host = 'localhost';
-    $user = 'root';
-    $password = '';
-    $db = 'ccg';
+    require 'config.php';
 
-    $conexao = new mysqli($host, $user, $password, $db);
-
-    if ($conexao->connect_error) {
-        die("Falha na conexão: " . $conn->connect_error);
-    }
-        
     $name = $_POST['nome'];
     $about = $_POST['sobre'];
     $date = $_POST['data_nasc'];
@@ -29,8 +20,6 @@
     VALUES ('$name','$about','$date','$cpf','$sexo','$email','$telefone','$cep','$address','$number','$comp','$motive','$animal')";
 
     $conexao->query($result);
-
     $conexao->close();
-    ?>
 
 ?>
