@@ -171,9 +171,9 @@ input{
     background-color: black;
     border: 0;
     border-radius: 5px;
-    color: yellow;
+    color: white;
     margin: 15px;
-    width: 50%;
+    width: 10%;
 }
 #questions button:hover{
     color: white;
@@ -204,20 +204,20 @@ input{
     width: 400px;
     text-align: left;
 }
-#blocos_gatos div{
+#blocos_gatos p{
     font-size: 20px;
 }
 
-#BotaoAdt{
-    color: yellow;
-    background-color: black;
+#blocos_gatos a{
+    background-color: #ffda05e7;
+    color: black;
     font-weight: bold;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
 }
-#BotaoAdt:hover{
-    padding: 11px;
+#blocos_gatos a:hover{
+    padding: 6px;
 }
 
 
@@ -242,7 +242,7 @@ input{
 }
 .questionario button{
     background-color: black;
-    color: #ffda05e7;
+    color: white;
     border: 0;
     border-radius: 10px;
     padding: 5px 10px;
