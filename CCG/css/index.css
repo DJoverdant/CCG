@@ -33,9 +33,7 @@ input{
 /* Respostas */
 #response{
     color: black;
-    border-radius: 10px;
     font-size: 12px;
-
 }
 
 /* index.html */
@@ -48,7 +46,7 @@ input{
     justify-items: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding-bottom: 50px;
 }
 
 #toolbar{
