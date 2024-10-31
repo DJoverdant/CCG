@@ -1,3 +1,4 @@
+/* Globais */
 body{ 
     background-color: rgb(0, 0, 0);
     color: white;
@@ -30,11 +31,29 @@ input{
     background-color: rgba(0, 0, 0, 0);
 }
 
-/* Respostas */
 #response{
     color: black;
     font-size: 12px;
 }
+
+.header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 50px;
+    border-bottom: solid 5px;
+}
+.header img{
+    width: 4%;
+    border-radius: 100%;
+}
+.header img:hover{
+    opacity: 60%; 
+}
+.header h1{
+    margin-left: 40%;
+}
+
 
 /* index.html */
 .background{
@@ -140,7 +159,7 @@ input{
 }
 
 
-/* login.html */
+/* login.html e signup.html */
 .container{
     display: flex;
     justify-content: center;
@@ -176,7 +195,7 @@ input{
     width: 10%;
 }
 #questions button:hover{
-    color: white;
+    width: 11%;
 }
 #questions a{
     color: yellow;
