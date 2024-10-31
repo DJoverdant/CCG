@@ -274,12 +274,13 @@ input{
         background-color: rgba(0, 0, 0, 0.856);
         color: white;
         border-radius: 20px;
-        width: 4000px;
+        width: 90%;
         text-align: left;
+        height: 50%;
 
     }
     p{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #BotaoAdt{
@@ -287,12 +288,33 @@ input{
         background-color: black;
         font-weight: bold;
         border-radius: 10px;
-        padding: 2% 40%;
+        padding: 2% 12%;
         text-decoration: none;
         align-items: center;
     }
     #BotaoAdt:hover{
-        padding: 2% 40%;
+        padding: 2% 12%;
+    }
+    #questions{
+        width: 75%;
+    }
+    #questions button{
+        height: 40px;
+    }
+    .container img{
+        width: 75%;
+    }
+    .container img:hover{
+        width: 75%;
+        opacity: 60%; 
+    }
+    .questionario button{
+        padding: 5px 10px;
+        width: 80%;
+        height: 40px;  
+    }
+    .questionario r{
+        font-size: 30px;
     }
 
 }
