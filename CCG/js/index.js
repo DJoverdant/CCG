@@ -1,12 +1,3 @@
-function validate(){ 
-
-    var user = document.getElementById("user").value; 
-    var password = document.getElementById("password").value; 
-
-    // checar no bando de dados e armazenar estes valores
-
-} 
-
 function go_to(x){
 
     if (x==0){

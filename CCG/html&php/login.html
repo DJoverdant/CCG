@@ -18,12 +18,14 @@
             <div id="questions"> 
                 
                 <h1> Seja bem-vindo! </h1>
-                <input type="text" name="username" placeholder="Digite seu user"> 
-                <br>
-                <input type="password" name="senha" placeholder="Digite sua senha">
-                <br>
-                <button onclick="go_to(0)" name="submit" id="submit"> Entrar </button>
-                <br>
+                <form method="POST" action="send_login.php">
+                    <input type="text" name="username" placeholder="Digite seu user"> 
+                    <br>
+                    <input type="password" name="senha" placeholder="Digite sua senha">
+                    <br>
+                    <button onclick="go_to(0)" name="submit" type="submit"> Entrar </button>
+                </form>
+                
                 <button onclick="go_to(3)"> Criar conta </button>
                 
             </div>
