@@ -283,7 +283,7 @@ input{
     .header h1{
         margin-left: 20%;
     }
-
+    
     .questionario{
         color: black;
         background-color: #ffda05e7;
@@ -338,7 +338,12 @@ input{
     }
     #questions button{
         height: 40px;
+        width: 20%;
     }
+    #questions button:hover{
+        width: 21%;
+    }
+
     .container img{
         width: 75%;
     }
