@@ -57,7 +57,7 @@ input{
 
 /* index.html */
 .background{
-    background-image: url("images/blackcat.jpg");
+    background-image: url("../images/blackcat.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -175,7 +175,7 @@ input{
     opacity: 60%; 
 }
 
-#questions{
+#login{
     width: 60%;
     border-radius: 10px;
     background-color: #ffda05e7;
@@ -183,10 +183,10 @@ input{
     font-size: 20px;
     font-weight: bolder;
 }
-#questions input{
+#login input{
     width:75%;
 }
-#questions button{
+#login button{
     background-color: black;
     border: 0;
     border-radius: 5px;
@@ -194,10 +194,10 @@ input{
     margin: 15px;
     width: 10%;
 }
-#questions button:hover{
+#login button:hover{
     width: 11%;
 }
-#questions a{
+#login a{
     color: yellow;
     background-color: black;
     width: 50%;
@@ -208,7 +208,7 @@ input{
 
 /* adocao.html */
 .adote{
-    background-image: url("images/adote.jpg");
+    background-image: url("../images/adote.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size:cover;
@@ -333,14 +333,14 @@ input{
     #BotaoAdt:hover{
         padding: 2% 12%;
     }
-    #questions{
+    #login{
         width: 75%;
     }
-    #questions button{
+    #login button{
         height: 40px;
         width: 20%;
     }
-    #questions button:hover{
+    #login button:hover{
         width: 21%;
     }
 
