@@ -2,22 +2,19 @@
     
     require 'config.php';
 
-    header('Content-Type: application/json');
-    $data = json_decode(file_get_contents("php://input"), true);
-
-    $name = $data['nome'];
-    $about = $data['sobre'];
-    $date = $data['data_nasc'];
-    $cpf = $data['cpf'];
-    $sexo = $data['sexo'];
-    $email = $data['email'];
-    $telefone = $data['telefone'];
-    $cep = $data['cep'];
-    $address = $data['endereco'];
-    $number = $data['numero'];
-    $comp = $data['complemento'];
-    $motive = $data['motivo'];
-    $animal = $data['animais'];
+    $name = $dados['nome'];
+    $about = $dados['sobre'];
+    $date = $dados['data_nasc'];
+    $cpf = $dados['cpf'];
+    $sexo = $dados['sexo'];
+    $email = $dados['email'];
+    $telefone = $dados['telefone'];
+    $cep = $dados['cep'];
+    $address = $dados['endereco'];
+    $number = $dados['numero'];
+    $comp = $dados['complemento'];
+    $motive = $dados['motivo'];
+    $animal = $dados['animais'];
 
     $result = "INSERT INTO formularios(nome,sobre,data_nasc,cpf,sexo,email,telefone,cep,endereco,numero,complemento,motivo,animais) 
     VALUES ('$name','$about','$date','$cpf','$sexo','$email','$telefone','$cep','$address','$number','$comp','$motive','$animal')";

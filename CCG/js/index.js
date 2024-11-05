@@ -6,14 +6,14 @@ function send(to){
         evento.preventDefault();
         
         const form_dados = new FormData(forms);
-        const data = Object.fromEntries(form_dados);
+        const dados = Object.fromEntries(form_dados);
         
         fetch(to, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(dados)
         })
     })
     

@@ -2,13 +2,11 @@
     
     require 'config.php';
     
-    header('Content-Type: application/json');
-    $data = json_decode(file_get_contents("php://input"), true);
+    $user = $dados['username'];
+    $pass = $dados['senha'];
+    $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
     
-    $user = $data['username'];
-    $pass = $data['senha'];
-    
-    $result = "INSERT INTO usuarios(username,senha) VALUES ('$user','$pass')";
+    $result = "INSERT INTO usuarios(username,senha) VALUES ('$user','$hashed_pass')";
 
     $conexao->query($result);
     $conexao->close();

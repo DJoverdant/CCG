@@ -2,35 +2,37 @@
     
     require 'config.php';
 
-    header('Content-Type: application/json');
-    $data = json_decode(file_get_contents("php://input"), true);
+    session_start();
 
-    $user = $data['username'];
-    $pass = $data['senha'];
-    $hashed_password = password_hash($pass, PASSWORD_DEFAULT);
+    $user = $dados['username'];
+    $pass = $dados['senha'];
     
-    $result = "SELECT senha FROM usuarios WHERE username = ?";
-    $run = $conexao->prepare($result);
-    $run->bind_param("s", $username);
+    $send = "SELECT senha FROM usuarios WHERE username = ?";
+    $run = $conexao->prepare($send);
+    $run->bind_param("s", $user);
     $run->execute();
-    $run->store_result();
+
+    $result = $run->get_result();
     
-    if ($run->num_rows > 0) {
-        $run->bind_result($hashed_password);
-        $run->fetch();
+    if ($result->num_rows > 0) {
+        $credentials = $result->fetch_assoc();
     
-        if (password_verify($pass, $hashed_password)) {
-            echo "Login bem-sucedido!";
-        } 
-        else {
-            echo "Senha incorreta.";
+        if (password_verify($pass, $credentials['senha'])){
+            $_SESSION['id_user'] = $credentials['id'];
+            $_SESSION['username'] = $credentials['username'];
+
+            echo "deu certo";
+            header("Location: ../index.html");
+            exit();
         }
-    } 
-    else {
-        echo "Usuário não encontrado.";
+        else{
+            echo "errou";
+        }
+    }
+    else{
+        echo "user n existe";
     }
 
-    $run->close();
     $conexao->close();
 ?>
     

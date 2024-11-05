@@ -9,9 +9,12 @@
 
   Parte 2:
   - Resposividade a dispositivo mobile. ✔
-  - Banco de dados.
+  - Banco de dados. ✔
+  - Assíncrono. ✔
+  - Autenticação de user. X
+  - Puxar Gatos pelo bd no volunatirar.html ?
 
 ATENÇÃO!
 A pasta BD(banco de dados) serve somente para importação no xampp.
 
-![gif](https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif)
+![gif](https://media.tenor.com/tOibXXzrc-wAAAAM/nice.gif)
