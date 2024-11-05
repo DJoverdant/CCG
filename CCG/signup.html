@@ -19,14 +19,14 @@
                 
                 <h1> Crie sua conta! </h1>
 
-                <form method="POST" action="php/send_signup.php">
+                <form id="form" action="javascript:send('php/send_signup.php')">
 
                     <input type="text" name="username" placeholder="Digite seu user"> 
                     <br>
                     <input type="password" name="senha" placeholder="Digite sua senha">
                     <br>
                     <p id="response"></p>
-                    <button onclick="go_to(2)" name="submit" type="submit"> Criar </button>
+                    <button ondblclick="go_to(2)" name="submit" type="submit"> Criar </button>
                 
                 </form>
                 

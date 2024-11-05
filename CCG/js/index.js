@@ -1,3 +1,24 @@
+function send(to){
+
+    const forms = document.getElementById("form");
+
+    forms.addEventListener('submit', evento => {
+        evento.preventDefault();
+        
+        const form_dados = new FormData(forms);
+        const data = Object.fromEntries(form_dados);
+        
+        fetch(to, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+    })
+    
+}
+
 function go_to(x){
 
     if (x==0){

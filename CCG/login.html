@@ -18,12 +18,13 @@
             <div id="login"> 
                 
                 <h1> Seja bem-vindo! </h1>
-                <form method="POST" action="php/send_login.php">
+
+                <form id="form" action="javascript:send('php/send_login.php')">
                     <input type="text" name="username" placeholder="Digite seu user"> 
                     <br>
                     <input type="password" name="senha" placeholder="Digite sua senha">
                     <br>
-                    <button onclick="go_to(0)" name="submit" type="submit"> Entrar </button>
+                    <button ondblclick="go_to(0)" name="submit" type="submit"> Entrar </button>
                 </form>
                 
                 <button onclick="go_to(3)"> Criar conta </button>

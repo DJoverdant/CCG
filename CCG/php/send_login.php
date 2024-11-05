@@ -2,8 +2,11 @@
     
     require 'config.php';
 
-    $user = $_POST['username'];
-    $pass = $_POST['senha'];
+    header('Content-Type: application/json');
+    $data = json_decode(file_get_contents("php://input"), true);
+
+    $user = $data['username'];
+    $pass = $data['senha'];
     $hashed_password = password_hash($pass, PASSWORD_DEFAULT);
     
     $result = "SELECT senha FROM usuarios WHERE username = ?";

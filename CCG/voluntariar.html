@@ -21,36 +21,37 @@
         <section class="questionario">
             
             <p>Preencha os campos abaixo:</p>
-            <form method="post" action="php/send_volunt.php">
+
+            <form id="form" action="javascript:send('php/send_volunt.php')">
                 
-                <input name="nome" type="text" id="" placeholder="Nome completo">
+                <input name="nome" type="text" placeholder="Nome completo">
                 
-                <input name="sobre" type="text" id="" placeholder="Sobre mim">
+                <input name="sobre" type="text" placeholder="Sobre mim">
                 
-                <input name="data_nasc" type="date" id="">
+                <input name="data_nasc" type="date" placeholder="dd-mm-yyyy">
                 
-                <input name="cpf" type="text" id="" placeholder="CPF">
+                <input name="cpf" type="text" placeholder="CPF">
                 
-                <input name="sexo" type="text" id="" placeholder="Sexo">
+                <input name="sexo" type="text" placeholder="Sexo">
 
-                <input name="email" type="email" id="" placeholder="Email">
+                <input name="email" type="email" placeholder="Email">
 
-                <input name="telefone" type="tel" id="" placeholder="Telefone">
+                <input name="telefone" type="tel" placeholder="Telefone">
 
-                <input name="cep" type="number" id="" placeholder="CEP">
+                <input name="cep" type="number" placeholder="CEP">
 
-                <input name="endereco" type="text" id="" placeholder="Endereço">
+                <input name="endereco" type="text" placeholder="Endereço">
 
-                <input name="numero" type="number" id="" placeholder="Número"> 
+                <input name="numero" type="number" placeholder="Número"> 
 
-                <input name="complemento" type="text" id="" placeholder="Complemento">
+                <input name="complemento" type="text" placeholder="Complemento">
 
-                <input name="motivo" type="text" id="" placeholder="Por que quer se voluntariar">
+                <input name="motivo" type="text" placeholder="Por que quer se voluntariar">
 
-                <input name="animais" type="text" id="" placeholder="Possui animais? Se sim, quais?">
+                <input name="animais" type="text" placeholder="Possui animais? Se sim, quais?">
                 
                 <p id="response"></p>
-                <button onclick="go_to(1)" name="submit" type="submit"> Salvar </button>
+                <button ondblclick="go_to(1)" name="submit" type="submit"> Salvar </button>
             
             </form>
             
