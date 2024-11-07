@@ -4,11 +4,10 @@
     
     $user = $dados['username'];
     $pass = $dados['senha'];
-    $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
     
-    $result = "INSERT INTO usuarios(username,senha) VALUES ('$user','$hashed_pass')";
+    $sql = "INSERT INTO usuarios(username,senha) VALUES ('$user','$pass')";
 
-    $conexao->query($result);
+    $conexao->query($sql);
     $conexao->close();
 
 ?>

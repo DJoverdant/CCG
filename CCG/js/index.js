@@ -16,6 +16,17 @@ function send(to){
             body: JSON.stringify(dados)
         })
     })
+    .then(resposta => resposta.json())
+    .then(data => {
+        if (data.status === 'success') {
+            window.location.href = data.redirect;  
+        } 
+        else {
+            alert(data.message);  
+            window.location.href = data.redirect;  
+        }
+    })
+    .catch(error => console.error('Erro:', error));
     
 }
 

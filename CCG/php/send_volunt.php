@@ -16,10 +16,10 @@
     $motive = $dados['motivo'];
     $animal = $dados['animais'];
 
-    $result = "INSERT INTO formularios(nome,sobre,data_nasc,cpf,sexo,email,telefone,cep,endereco,numero,complemento,motivo,animais) 
+    $sql = "INSERT INTO formularios(nome,sobre,data_nasc,cpf,sexo,email,telefone,cep,endereco,numero,complemento,motivo,animais) 
     VALUES ('$name','$about','$date','$cpf','$sexo','$email','$telefone','$cep','$address','$number','$comp','$motive','$animal')";
 
-    $conexao->query($result);
+    $conexao->query($sql);
     $conexao->close();
 
 ?>

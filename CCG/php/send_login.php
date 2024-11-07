@@ -1,36 +1,24 @@
 <?php
-    
+
     require 'config.php';
-
-    session_start();
-
+    
     $user = $dados['username'];
     $pass = $dados['senha'];
     
-    $send = "SELECT senha FROM usuarios WHERE username = ?";
-    $run = $conexao->prepare($send);
-    $run->bind_param("s", $user);
-    $run->execute();
+    if (!empty($user) && !empty($pass)){
+        
+        $sql = "SELECT * FROM usuarios WHERE username = '$user' and senha = '$pass'";
+        $result = $conexao->query($sql);
 
-    $result = $run->get_result();
-    
-    if ($result->num_rows > 0) {
-        $credentials = $result->fetch_assoc();
-    
-        if (password_verify($pass, $credentials['senha'])){
-            $_SESSION['id_user'] = $credentials['id'];
-            $_SESSION['username'] = $credentials['username'];
-
-            echo "deu certo";
-            header("Location: ../index.html");
-            exit();
+        if (mysqli_num_rows($result) > 0){
+            echo json_encode(['status' => 'success', 'redirect' => '/index.html']);
         }
         else{
-            echo "errou";
+            echo json_encode(['status' => 'error', 'redirect' => '/login.html', 'message' => 'Usuário ou senha incorretos!']);
         }
     }
     else{
-        echo "user n existe";
+        echo json_encode(['status' => 'error', 'redirect' => '/login.html', 'message' => 'Preencha todos os campos!']);
     }
 
     $conexao->close();
