@@ -37,6 +37,7 @@ input{
     border-right: 0px;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0);
+    transition: all 500ms ease;
 }
 
 #response{
@@ -76,6 +77,9 @@ input{
         border-bottom: 0;
         width: 50vw;   
     }
+    #search:hover{
+        width: 51vw;
+    }
 
     #block{
         display: flex;
@@ -98,6 +102,7 @@ input{
     }
     #link_cab:hover{
         font-size: 22px;
+        opacity: 40%;
     }
 
     #focus{
@@ -116,11 +121,12 @@ input{
         display: inline-block;
         border: 2px solid white;
         margin: 40px;
-        padding: 2px 20px;
+        padding: 10px 20px;
         text-decoration: none;
     }
     #bt:hover{
         padding: 25px;
+        border-color: #ffda05e7;
     }
 
 
@@ -253,6 +259,7 @@ input{
 }
 #blocos_gatos a:hover{
     padding: 10px;
+    opacity: 60%;
 }
 
 
@@ -326,6 +333,9 @@ input{
         margin: 20px;
         padding: 5px 15px;
         white-space: nowrap;
+    }
+    #bt:hover{
+        padding: 10px 20px;
     }
     #blocos_gatos{
         background-color: rgba(0, 0, 0, 0.856);
