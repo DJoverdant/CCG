@@ -11,7 +11,7 @@
   - Resposividade a dispositivo mobile. ✔
   - Banco de dados. ✔
   - Assíncrono. ✔
-  - Autenticação de user. X
+  - Autenticação de user. ✔
   - Puxar Gatos pelo bd no volunatirar.html ?
 
 ATENÇÃO!
