@@ -11,14 +11,15 @@
         $result = $conexao->query($sql);
 
         if (mysqli_num_rows($result) > 0){
-            echo json_encode(['status' => 'success', 'redirect' => '/index.html']);
+            echo json_encode(['redirect' => '/admin.php', 'message' => 'Entrando...']);
         }
         else{
-            echo json_encode(['status' => 'error', 'redirect' => '/login.html', 'message' => 'Usuário ou senha incorretos!']);
+            echo json_encode(['redirect' => '/login.html', 'message' => 'Usuário ou senha incorretos!']);
         }
+        
     }
     else{
-        echo json_encode(['status' => 'error', 'redirect' => '/login.html', 'message' => 'Preencha todos os campos!']);
+        echo json_encode(['redirect' => '/login.html', 'message' => 'Preencha todos os campos!']);
     }
 
     $conexao->close();
