@@ -1,12 +1,3 @@
-<?php
-
-    require 'php/config.php';
-
-    $sql = "SELECT * FROM formularios ORDER BY id DESC";
-    $result = $conexao->query($sql);
-
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
         
@@ -22,40 +13,27 @@
 
     <body>
 
-        <table class="table">
-            <thead>
+        <section class="container">
 
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Sobre</th>
-                    <th scope="col">Data de Nascimento</th>
-                    <th scope="col">CPF</th>
-                    <th scope="col">Sexo</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Telefone</th>
-                    <th scope="col">CEP</th>
-                    <th scope="col">Endereço</th>
-                    <th scope="col">Número</th>
-                    <th scope="col">Complemento</th>
-                    <th scope="col">Motivo</th>
-                    <th scope="col">Animais</th>
-                    <th scope="col">...</th>
-                </tr>
+            <div id="login"> 
+
+                <h1>Formulários</h1>
+
+                <form id="form" action="javascript:send('php/admin.php')">
+
+                     
+                    
+                    <button name="submit" type="submit"> Criar </button>
                 
-            </thead>
-
-            <tbody>
-                <?php
-                    while($user_data = mysqli_fetch_assoc($result)){
-                        echo "<tr>";
-                        echo "<td>".$user_data['id']."</td>";
-                    }
-                ?>
-            </tbody>
-        
-        </table>
+                </form>
+                
+            </div>
+            
+        </section>
 
     </body>
+
+</html>
+
 
 </html>
