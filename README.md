@@ -12,7 +12,7 @@
   - Banco de dados. ✔
   - Assíncrono. ✔
   - Autenticação de user. ✔
-  - Puxar Gatos pelo bd no volunatirar.html ?
+
 
 ATENÇÃO!
 A pasta BD(banco de dados) serve somente para importação no xampp.
